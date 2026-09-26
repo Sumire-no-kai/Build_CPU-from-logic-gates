@@ -1,7 +1,7 @@
-# 仓库维护约定
+# Repository guidance
 
-- 本仓库保存《Turing Complete》的个人关卡记录与计算机组成学习笔记，正文以中文为主，保留作者的个人表达。
-- 关卡记录放在 `levels/`，专题笔记放在 `notes/`，引用的图片放在 `assets/`；目录在有实际内容时创建。
-- 使用可独立阅读的普通 Markdown 和相对路径，便于日后同步到个人网站。网站的构建、元数据和发布方式确定前，不预设相关工具或格式。
-- 区分实际完成或验证的结果与推测、待尝试的方案；不要编造关卡结果。
-- 修改笔记时遵循现有命名与排版习惯，并检查新增或修改的相对链接。
+- This repository contains personal *Turing Complete* level records and computer architecture notes. Write source notes primarily in Chinese and preserve the author's voice. The README may be bilingual.
+- Put level records in `levels/`, topic notes in `notes/`, and referenced images in `assets/`. Create directories when they have content.
+- Use portable Markdown and relative links for eventual reuse on a personal website. Do not require English copies of source notes; translations can be handled later by the website or another workflow.
+- Distinguish completed or verified results from ideas that still need testing. Do not invent level outcomes.
+- Follow existing filenames and formatting when editing notes, and check any new or changed relative links.
