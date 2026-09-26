@@ -16,6 +16,12 @@ The study notes are written primarily in Chinese.
 
 学习笔记以中文为主。
 
+## Coming later / 后续
+
+A more complete, in-depth set of CS:APP study notes is in the works. I'm still studying the material—more to come.
+
+更完整、更深入的 CS:APP 学习笔记正在准备中。我还在深入研读，之后再慢慢展开。
+
 ## License / 许可
 
 See [LICENSE](LICENSE). / 见 [LICENSE](LICENSE)。
