@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 210" role="img" aria-labelledby="title desc">
+  <title id="title">两只双输入与门组成三路与门</title>
+  <desc id="desc">A 和 B 进入第一只 AND，输出 S；S 和 C 进入第二只 AND，得到 Q。</desc>
+  <style>
+    .wire { fill: none; stroke: #334155; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+    .gate { fill: #eaf3ff; stroke: #334155; stroke-width: 3; }
+    .label { fill: #0f172a; font: 17px system-ui, sans-serif; }
+    .name { fill: #0f172a; font: 600 18px system-ui, sans-serif; text-anchor: middle; }
+    @media (prefers-color-scheme: dark) {
+      .wire { stroke: #cbd5e1; }
+      .gate { fill: #173454; stroke: #cbd5e1; }
+      .label, .name { fill: #f1f5f9; }
+    }
+  </style>
+  <path class="wire" d="M 65 55 H 210 M 65 105 H 210 M 330 80 H 450 V 95 H 510 M 65 185 H 450 V 145 H 510 M 630 120 H 710" />
+  <rect class="gate" x="210" y="30" width="120" height="100" rx="12" />
+  <rect class="gate" x="510" y="70" width="120" height="100" rx="12" />
+  <text class="name" x="270" y="87">AND</text>
+  <text class="name" x="570" y="127">AND</text>
+  <text class="label" x="30" y="61">A</text>
+  <text class="label" x="30" y="111">B</text>
+  <text class="label" x="30" y="191">C</text>
+  <text class="label" x="365" y="69">S</text>
+  <text class="label" x="718" y="126">Q</text>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 240" role="img" aria-labelledby="title desc">
+  <title id="title">用或门、与非门和与门组成异或门</title>
+  <desc id="desc">A 和 B 同时送入 OR 和 NAND；两个门的输出再送入 AND。只有 A、B 一真一假时，输出 Q 为真。</desc>
+  <style>
+    .wire { fill: none; stroke: #334155; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+    .gate { fill: #eaf3ff; stroke: #334155; stroke-width: 3; }
+    .label { fill: #0f172a; font: 17px system-ui, sans-serif; }
+    .name { fill: #0f172a; font: 600 18px system-ui, sans-serif; text-anchor: middle; }
+    @media (prefers-color-scheme: dark) {
+      .wire { stroke: #cbd5e1; }
+      .gate { fill: #173454; stroke: #cbd5e1; }
+      .label, .name { fill: #f1f5f9; }
+    }
+  </style>
+  <path class="wire" d="M 55 40 H 240 M 55 90 H 240 M 55 150 H 240 M 55 200 H 240 M 370 65 H 470 V 95 H 545 M 370 175 H 470 V 145 H 545 M 675 120 H 720" />
+  <rect class="gate" x="240" y="15" width="130" height="100" rx="12" />
+  <rect class="gate" x="240" y="125" width="130" height="100" rx="12" />
+  <rect class="gate" x="545" y="65" width="130" height="110" rx="12" />
+  <text class="name" x="305" y="72">OR</text>
+  <text class="name" x="305" y="182">NAND</text>
+  <text class="name" x="610" y="127">AND</text>
+  <text class="label" x="22" y="46">A</text>
+  <text class="label" x="22" y="96">B</text>
+  <text class="label" x="22" y="156">A</text>
+  <text class="label" x="22" y="206">B</text>
+  <text class="label" x="728" y="126">Q</text>
+</svg>

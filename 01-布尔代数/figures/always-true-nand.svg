@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 190" role="img" aria-labelledby="title desc">
+  <title id="title">用两个与非门组成恒真输出</title>
+  <desc id="desc">输入 A 接到第一个 NAND 的两个输入端，得到 NOT A；A 也直接接到第二个 NAND 的一个输入端，NOT A 接到另一个输入端，输出 Q 恒真。</desc>
+  <style>
+    .wire { fill: none; stroke: #334155; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+    .gate { fill: #eaf3ff; stroke: #334155; stroke-width: 3; }
+    .dot { fill: #334155; }
+    .label { fill: #0f172a; font: 17px system-ui, sans-serif; }
+    .name { fill: #0f172a; font: 600 17px system-ui, sans-serif; text-anchor: middle; }
+    @media (prefers-color-scheme: dark) {
+      .wire { stroke: #cbd5e1; }
+      .gate { fill: #173454; stroke: #cbd5e1; }
+      .dot { fill: #cbd5e1; }
+      .label, .name { fill: #f1f5f9; }
+    }
+  </style>
+  <path class="wire" d="M 60 145 H 440 M 120 145 V 50 H 220 M 160 145 V 100 H 220 M 350 75 H 400 V 95 H 440 M 560 120 H 600" />
+  <circle class="dot" cx="120" cy="145" r="5" />
+  <circle class="dot" cx="160" cy="145" r="5" />
+  <rect class="gate" x="220" y="20" width="130" height="110" rx="12" />
+  <rect class="gate" x="440" y="65" width="120" height="110" rx="12" />
+  <text class="name" x="285" y="82">NAND</text>
+  <text class="name" x="500" y="127">NAND</text>
+  <text class="label" x="27" y="151">A</text>
+  <text class="label" x="608" y="126">Q</text>
+</svg>

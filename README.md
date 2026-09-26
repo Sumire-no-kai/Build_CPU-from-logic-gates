@@ -10,6 +10,8 @@ Notes are grouped by chapter. Within a chapter, an entry can follow a day's lear
 
 笔记按章节归档。章节内既可以记录某天的学习进度，也可以围绕一个知识点整理；关卡中的实践与由此学到的原理可以写在同一篇笔记里。
 
+- [第一部分：从与非门开始搭逻辑门](01-布尔代数/从与非门开始搭逻辑门.md)
+
 ## CPU build goals / 处理器构建目标
 
 These are long-term learning goals for sandbox mode, not a fixed schedule. Each core has an explicit instruction set architecture (ISA); its circuit design is a separate question.

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 150" role="img" aria-labelledby="title desc">
+  <title id="title">与非门</title>
+  <desc id="desc">输入 A 和 B 接入 NAND，输出 Q。</desc>
+  <style>
+    .wire { fill: none; stroke: #334155; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+    .gate { fill: #eaf3ff; stroke: #334155; stroke-width: 3; }
+    .label { fill: #0f172a; font: 17px system-ui, sans-serif; }
+    .name { fill: #0f172a; font: 600 18px system-ui, sans-serif; text-anchor: middle; }
+    @media (prefers-color-scheme: dark) {
+      .wire { stroke: #cbd5e1; }
+      .gate { fill: #173454; stroke: #cbd5e1; }
+      .label, .name { fill: #f1f5f9; }
+    }
+  </style>
+  <path class="wire" d="M 60 50 H 200 M 60 100 H 200 M 330 75 H 475" />
+  <rect class="gate" x="200" y="25" width="130" height="100" rx="12" />
+  <text class="name" x="265" y="82">NAND</text>
+  <text class="label" x="27" y="56">A</text>
+  <text class="label" x="27" y="106">B</text>
+  <text class="label" x="483" y="81">Q</text>
+</svg>

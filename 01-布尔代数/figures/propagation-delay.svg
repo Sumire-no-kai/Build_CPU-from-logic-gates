@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 295" role="img" aria-labelledby="title desc">
+  <title id="title">三路或门中的传播延迟示意</title>
+  <desc id="desc">B 和 C 保持为假。A 先从假变真，经过第一只或门后 S 变真，再经过第二只或门后 Q 变真。横向时间间隔不按比例。</desc>
+  <style>
+    .guide { stroke: #94a3b8; stroke-width: 1.5; stroke-dasharray: 5 6; }
+    .wave { fill: none; stroke: #2563eb; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+    .label { fill: #0f172a; font: 18px system-ui, sans-serif; }
+    .hint { fill: #475569; font: 15px system-ui, sans-serif; }
+    @media (prefers-color-scheme: dark) {
+      .guide { stroke: #64748b; }
+      .wave { stroke: #93c5fd; }
+      .label { fill: #f1f5f9; }
+      .hint { fill: #cbd5e1; }
+    }
+  </style>
+  <path class="guide" d="M 190 32 V 232 M 380 32 V 232 M 570 32 V 232" />
+  <path class="wave" d="M 105 83 H 190 V 53 H 710 M 105 153 H 380 V 123 H 710 M 105 223 H 570 V 193 H 710" />
+  <text class="label" x="45" y="75">A</text>
+  <text class="label" x="45" y="145">S</text>
+  <text class="label" x="45" y="215">Q</text>
+  <text class="hint" x="580" y="25">B = C = F</text>
+  <text class="hint" x="155" y="257">A 变化</text>
+  <text class="hint" x="345" y="257">S 变化</text>
+  <text class="hint" x="535" y="257">Q 变化</text>
+  <text class="hint" x="635" y="286">时间 →</text>
+</svg>
