@@ -1,7 +1,7 @@
 # Repository guidance
 
-- This repository contains personal *Turing Complete* level records and computer architecture notes. Write source notes primarily in Chinese and preserve the author's voice. The README may be bilingual.
-- Put level records in `levels/`, topic notes in `notes/`, and referenced images in `assets/`. Create directories when they have content.
-- Use portable Markdown and relative links for eventual reuse on a personal website. Do not require English copies of source notes; translations can be handled later by the website or another workflow.
-- Distinguish completed or verified results from ideas that still need testing. Do not invent level outcomes.
-- Follow existing filenames and formatting when editing notes, and check any new or changed relative links.
+- This repository is a personal technical notebook for learning digital logic and computer architecture through *Turing Complete*. Write study notes primarily in Chinese and preserve the author's voice. The README may be bilingual.
+- Use chapter directories for broad grouping. Let each note follow actual learning progress or a concept worth exploring; level experiments and the ideas learned from them may belong in the same note. Do not impose separate level and topic tracks or a fixed template.
+- Distinguish observed circuit behavior and verified results from hypotheses or open questions. Do not invent outcomes.
+- Follow the existing organization and formatting when editing notes, and check any new or changed relative links.
+- Keep public-facing descriptions focused on the study notes and what readers will find here.

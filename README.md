@@ -1,26 +1,20 @@
-# Turing Complete: Building a CPU from Logic Gates / 从逻辑门构建 CPU
+# Learning Computer Architecture with Turing Complete / 用 Turing Complete 学习计算机原理
 
-Personal notes from playing *Turing Complete* and learning how logic gates, circuits, and CPUs work.
+This repository collects what I learn about digital logic and computer architecture by building circuits in *Turing Complete*. The notes focus on the concepts, questions, and experiments that come out of that learning process.
 
-这里记录我游玩《Turing Complete》时的关卡尝试，以及对逻辑门、电路和 CPU 工作原理的学习。
+这里记录我借助《Turing Complete》学习数字逻辑与计算机组成时理解的知识点、遇到的问题和动手实践。关卡提供学习的场景，笔记围绕学到的内容展开。
 
-## Contents / 内容安排
+## Notes / 笔记
 
-- `levels/`: Level goals, circuit designs, problems encountered, and verified results. / 关卡目标、搭建思路、遇到的问题和实际验证结果。
-- `notes/`: Topic-based notes on concepts learned through the game. / 按主题整理游戏中学到的知识。
-- `assets/`: Screenshots and diagrams referenced by the notes. / 笔记引用的截图与示意图。
+Notes are grouped by chapter. Within a chapter, an entry can follow a day's learning, explore a concept, or connect a level with the ideas it teaches. Level work and related concepts can stay together in one note.
 
-Directories will be added as content is written. Notes use standard Markdown and relative links so they can be reused on a personal website.
-
-这些目录会在有对应内容时建立。笔记使用普通 Markdown 和相对路径，方便日后整理到个人网站。
+笔记按章节归档。章节内既可以记录某天的学习进度，也可以围绕一个知识点整理；关卡中的实践与由此学到的原理可以写在同一篇笔记里。
 
 ## Language / 语言
 
-The original Markdown notes are written primarily in Chinese. English translations may be prepared later for the personal website or other platforms; each note does not need an English copy in this repository.
+The study notes are written primarily in Chinese.
 
-源笔记以中文为主。英文译文可以在个人网站或其他平台需要时再处理，本仓库不要求每篇笔记同时提供英文版。
-
-This is an unofficial personal learning journal, not an official *Turing Complete* guide. / 这是个人学习记录，不是《Turing Complete》的官方攻略。
+学习笔记以中文为主。
 
 ## License / 许可
 
