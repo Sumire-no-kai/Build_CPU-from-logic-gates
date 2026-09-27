@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 190" role="img" aria-labelledby="title desc">
+  <title id="title">由异或门和非门组成同或门</title>
+  <desc id="desc">A 和 B 进入 XOR，XOR 的输出 X 进入 NOT，最终得到 Q。只有 A 和 B 相同时 Q 为真。</desc>
+  <style>
+    .wire { fill: none; stroke: #334155; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+    .gate { fill: #eaf3ff; stroke: #334155; stroke-width: 3; }
+    .label { fill: #0f172a; font: 17px system-ui, sans-serif; }
+    .name { fill: #0f172a; font: 600 18px system-ui, sans-serif; text-anchor: middle; }
+    @media (prefers-color-scheme: dark) {
+      .wire { stroke: #cbd5e1; }
+      .gate { fill: #173454; stroke: #cbd5e1; }
+      .label, .name { fill: #f1f5f9; }
+    }
+  </style>
+  <path class="wire" d="M 60 55 H 215 M 60 135 H 215 M 365 90 H 475 M 595 90 H 710" />
+  <rect class="gate" x="215" y="30" width="150" height="120" rx="12" />
+  <rect class="gate" x="475" y="55" width="120" height="70" rx="12" />
+  <text class="name" x="290" y="97">XOR</text>
+  <text class="name" x="535" y="97">NOT</text>
+  <text class="label" x="25" y="61">A</text>
+  <text class="label" x="25" y="141">B</text>
+  <text class="label" x="412" y="79">X</text>
+  <text class="label" x="718" y="96">Q</text>
+</svg>

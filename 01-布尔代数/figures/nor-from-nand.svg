@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 190" role="img" aria-labelledby="title desc">
   <title id="title">用非门与与非门组成或非门</title>
-  <desc id="desc">A 和 B 分别经过 NOT，再一起进入 NAND；NAND 的输出经过最后一个 NOT，得到 NOR。</desc>
+  <desc id="desc">A 经过 NOT 得到 U，B 经过 NOT 得到 V；U 和 V 进入 NAND 得到 X；X 再经过 NOT 得到 Q。</desc>
   <style>
     .wire { fill: none; stroke: #334155; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
     .gate { fill: #eaf3ff; stroke: #334155; stroke-width: 3; }
@@ -23,5 +23,8 @@
   <text class="name" x="580" y="102">NOT</text>
   <text class="label" x="17" y="56">A</text>
   <text class="label" x="17" y="146">B</text>
+  <text class="label" x="278" y="43">U</text>
+  <text class="label" x="278" y="162">V</text>
+  <text class="label" x="495" y="84">X</text>
   <text class="label" x="718" y="101">Q</text>
 </svg>

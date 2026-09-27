@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 290" role="img" aria-labelledby="title desc">
+  <title id="title">按两个目标输入组合分别搭出 XOR</title>
+  <desc id="desc">上支路计算 U 等于 A AND NOT B，下支路计算 V 等于 NOT A AND B。U、V 分别接入 OR 的两个输入端，得到 Q。重复的 A、B 表示同一对输入。</desc>
+  <style>
+    .wire { fill: none; stroke: #334155; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+    .gate { fill: #eaf3ff; stroke: #334155; stroke-width: 3; }
+    .label { fill: #0f172a; font: 17px system-ui, sans-serif; }
+    .name { fill: #0f172a; font: 600 18px system-ui, sans-serif; text-anchor: middle; }
+    @media (prefers-color-scheme: dark) {
+      .wire { stroke: #cbd5e1; }
+      .gate { fill: #173454; stroke: #cbd5e1; }
+      .label, .name { fill: #f1f5f9; }
+    }
+  </style>
+  <path class="wire" d="M 55 55 H 365 M 55 115 H 140 M 240 115 H 365 M 55 175 H 140 M 240 175 H 365 M 55 235 H 365 M 485 85 H 580 V 120 H 650 M 485 205 H 580 V 170 H 650 M 775 145 H 800" />
+  <rect class="gate" x="140" y="90" width="100" height="50" rx="12" />
+  <rect class="gate" x="140" y="150" width="100" height="50" rx="12" />
+  <rect class="gate" x="365" y="35" width="120" height="100" rx="12" />
+  <rect class="gate" x="365" y="155" width="120" height="100" rx="12" />
+  <rect class="gate" x="650" y="95" width="125" height="100" rx="12" />
+  <text class="name" x="190" y="122">NOT</text>
+  <text class="name" x="190" y="182">NOT</text>
+  <text class="name" x="425" y="92">AND</text>
+  <text class="name" x="425" y="212">AND</text>
+  <text class="name" x="712.5" y="152">OR</text>
+  <text class="label" x="22" y="61">A</text>
+  <text class="label" x="22" y="121">B</text>
+  <text class="label" x="22" y="181">A</text>
+  <text class="label" x="22" y="241">B</text>
+  <text class="label" x="515" y="73">U</text>
+  <text class="label" x="515" y="193">V</text>
+  <text class="label" x="812" y="151">Q</text>
+</svg>
