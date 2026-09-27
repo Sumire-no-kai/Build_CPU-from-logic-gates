@@ -11,6 +11,7 @@ Notes are grouped by chapter. Within a chapter, an entry can follow a day's lear
 笔记按章节归档。章节内既可以记录某天的学习进度，也可以围绕一个知识点整理；关卡中的实践与由此学到的原理可以写在同一篇笔记里。
 
 - [第一部分：从与非门开始搭逻辑门](01-布尔代数/从与非门开始搭逻辑门.md)
+- [第二部分：算术运算与存储器的前置知识](02-算术运算与存储器/算术运算与存储器的前置知识.md)
 
 ## CPU build goals / 处理器构建目标
 
