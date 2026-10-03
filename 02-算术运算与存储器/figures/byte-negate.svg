@@ -1,26 +1,51 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 400" role="img" aria-labelledby="title desc">
-<title id="title">八位补码求相反数：逐位取反再加一</title>
-<desc id="desc">输入字节先经过单字节NOT，接加法器A；B接八位常量0；一位输入进位Cin接T。加法器的八位和S作为输出，Cout不接。粗线八位，细线一位。</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 690" role="img" aria-labelledby="title desc">
+<title id="title">数值反转完整接线：含固定高低电平与集线器</title>
+<desc id="desc">题目唯一八位输入经单字节NOT接加法器A。固定低电平F分支到集线器全部八个输入，集成字节0后接B。固定高电平T接Cin。S接题目唯一八位输出，Cout不接。实心圆为连接点。</desc>
 <style>
-.wire,.bus{fill:none;stroke:#334155;stroke-width:3;stroke-linecap:round}.bus{stroke-width:7}
-.gate{fill:#eaf3ff;stroke:#334155;stroke-width:3}.label{fill:#0f172a;font:18px system-ui,sans-serif}.name{fill:#0f172a;font:600 20px system-ui,sans-serif;text-anchor:middle}
-@media(prefers-color-scheme:dark){.wire,.bus,.gate{stroke:#cbd5e1}.gate{fill:#173454}.label,.name{fill:#f1f5f9}}
+.wire,.bus{fill:none;stroke:#334155;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.bus{stroke-width:7}
+.gate{fill:#eaf3ff;stroke:#334155;stroke-width:2.5}.source{fill:#edf7ee;stroke:#334155;stroke-width:2.5}.dot{fill:#334155}
+.label{fill:#0f172a;font:18px system-ui,sans-serif}.name{fill:#0f172a;font:600 20px system-ui,sans-serif;text-anchor:middle}
+@media(prefers-color-scheme:dark){.wire,.bus,.gate,.source{stroke:#cbd5e1}.gate{fill:#173454}.source{fill:#244634}.dot{fill:#cbd5e1}.label,.name{fill:#f1f5f9}}
 </style>
-<rect class="gate" x="205" y="125" width="155" height="70" rx="12"/>
-<rect class="gate" x="560" y="110" width="205" height="190" rx="12"/>
-<path class="bus" d="M 40 160 H 205 M 360 160 H 560 M 395 255 H 560 M 765 160 H 1010"/>
-<path class="wire" d="M 660 55 V 110 M 765 255 H 825"/>
-<text class="label" x="40" y="135">输入 x（8 位）</text>
-<text class="name" x="282" y="167">单字节 NOT</text>
-<text class="label" x="389" y="139">逐位取反</text>
-<text class="label" x="575" y="167">A</text><text class="label" x="575" y="262">B</text>
-<text class="name" x="663" y="212">单字节加法器</text>
-<text class="label" x="620" y="139">Cin</text>
-<text class="label" x="680" y="65">T（1 位）</text>
-<text class="label" x="395" y="230">00000000</text>
-<text class="label" x="735" y="167">S</text>
-<text class="label" x="811" y="137">输出 −x（8 位）</text>
-<text class="label" x="840" y="262">Cout 不接</text>
-<text class="label" x="40" y="348">计算：逐位取反(x) + 0 + 1，只保留低八位。粗线为 8 位，细线为 1 位。</text>
-<text class="label" x="40" y="382">−128 的相反数 +128 超出八位补码范围；该输入的低八位结果仍为 10000000。</text>
+<rect class="gate" x="30" y="160" width="145" height="70" rx="12"/>
+<text class="name" x="102" y="189">题目输入</text><text class="name" x="102" y="216">x · 8 位</text>
+<rect class="gate" x="250" y="160" width="165" height="70" rx="12"/>
+<text class="name" x="332" y="201">单字节 NOT</text>
+<rect class="gate" x="660" y="155" width="235" height="285" rx="12"/>
+<text class="name" x="777" y="278">单字节加法器</text>
+<text class="name" x="777" y="310">A + B + Cin</text>
+<text class="label" x="675" y="202">A</text><text class="label" x="675" y="372">B</text>
+<text class="label" x="753" y="183">Cin</text>
+<text class="label" x="865" y="202">S</text><text class="label" x="840" y="404">Cout</text>
+<rect class="gate" x="990" y="160" width="155" height="70" rx="12"/>
+<text class="name" x="1067" y="189">题目输出</text><text class="name" x="1067" y="216">−x · 8 位</text>
+<path class="bus" d="M175 195H250 M415 195H660 M895 195H990"/>
+<text class="label" x="458" y="176">取反后的字节</text>
+<rect class="source" x="700" y="35" width="155" height="65" rx="12"/>
+<text class="name" x="777" y="62">固定高电平</text><text class="name" x="777" y="87">T = 1</text>
+<path class="wire" d="M777 100V155"/>
+<text class="label" x="798" y="130">1 位</text>
+<rect class="source" x="30" y="391" width="160" height="68" rx="12"/>
+<text class="name" x="110" y="419">固定低电平</text><text class="name" x="110" y="447">F = 0</text>
+<path class="wire" d="M190 425H245 M245 320V565"/>
+<circle class="dot" cx="245" cy="425" r="5"/>
+<rect class="gate" x="340" y="295" width="160" height="295" rx="12"/>
+<text class="name" x="420" y="278">集线器</text>
+<path class="wire" d="M245 320H340"/><circle class="dot" cx="245" cy="320" r="5"/><text class="label" x="354" y="326">1</text>
+<path class="wire" d="M245 355H340"/><circle class="dot" cx="245" cy="355" r="5"/><text class="label" x="354" y="361">2</text>
+<path class="wire" d="M245 390H340"/><circle class="dot" cx="245" cy="390" r="5"/><text class="label" x="354" y="396">4</text>
+<path class="wire" d="M245 425H340"/><circle class="dot" cx="245" cy="425" r="5"/><text class="label" x="354" y="431">8</text>
+<path class="wire" d="M245 460H340"/><circle class="dot" cx="245" cy="460" r="5"/><text class="label" x="354" y="466">16</text>
+<path class="wire" d="M245 495H340"/><circle class="dot" cx="245" cy="495" r="5"/><text class="label" x="354" y="501">32</text>
+<path class="wire" d="M245 530H340"/><circle class="dot" cx="245" cy="530" r="5"/><text class="label" x="354" y="536">64</text>
+<path class="wire" d="M245 565H340"/><circle class="dot" cx="245" cy="565" r="5"/><text class="label" x="354" y="571">128</text>
+<text class="label" x="268" y="614">八路均为 F</text>
+<path class="bus" d="M500 442H575V365H660"/>
+<text class="label" x="512" y="475">00000000</text>
+<text class="label" x="512" y="501">8 位字节 0</text>
+<path class="wire" d="M895 397H955"/>
+<circle cx="955" cy="397" r="5" class="gate"/>
+<text class="label" x="980" y="403">不连接</text>
+<text class="label" x="30" y="653">粗线：8 位；细线：1 位；实心圆：分支连接。高低电平是内部元件，不增加题目输入。</text>
+<text class="label" x="30" y="680">保留低八位。−128 的相反数 +128 超出八位补码范围，详见正文。</text>
 </svg>
