@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 340" role="img" aria-labelledby="title desc">
+<title id="title">两个锁存器构成上升沿触发器的功能示意</title>
+<desc id="desc">D进入前级锁存器，再进入后级输出Q。前级的写入允许接NOT CLK，后级接CLK，分别在相反的时钟阶段打开。</desc>
+<style>.wire{fill:none;stroke:#334155;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.box{fill:#eaf3ff;stroke:#334155;stroke-width:3}.dot{fill:#334155}.label{fill:#0f172a;font:18px system-ui,sans-serif}.name{fill:#0f172a;font:600 20px system-ui,sans-serif;text-anchor:middle}@media(prefers-color-scheme:dark){.wire,.box{stroke:#cbd5e1}.box{fill:#173454}.dot{fill:#cbd5e1}.label,.name{fill:#f1f5f9}}</style>
+<defs><mask id="clock-crossing" maskUnits="userSpaceOnUse" x="0" y="0" width="1000" height="340" style="mask-type:luminance"><rect width="1000" height="340" fill="white"/><rect x="325" y="215" width="10" height="10" fill="black"/></mask></defs>
+<path class="wire" d="M 75 105 H 210 M 450 105 H 580 M 820 105 H 900 M 120 270 H 225 M 175 270 V 220 H 700 V 165"/>
+<path class="wire" mask="url(#clock-crossing)" d="M 330 270 V 165"/>
+<circle class="dot" cx="175" cy="270" r="5"/>
+<rect class="box" x="210" y="45" width="240" height="120" rx="12"/>
+<rect class="box" x="580" y="45" width="240" height="120" rx="12"/>
+<rect class="box" x="225" y="250" width="105" height="40" rx="10"/>
+<text class="name" x="330" y="86">前级锁存器</text><text class="label" x="235" y="127">时钟为 0 时允许写入</text>
+<text class="name" x="700" y="86">后级锁存器</text><text class="label" x="605" y="127">时钟为 1 时允许写入</text>
+<text class="name" x="277" y="277">NOT</text><text class="label" x="35" y="111">D</text><text class="label" x="915" y="111">Q</text>
+<text class="label" x="35" y="276">时钟</text><text class="label" x="340" y="245">反相时钟</text>
+<text class="label" x="85" y="326">相反的时钟阶段控制两个锁存器；这两个内部锁存器共同完成一次边沿采样。</text>
+</svg>

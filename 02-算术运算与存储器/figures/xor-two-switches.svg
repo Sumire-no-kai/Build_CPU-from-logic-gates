@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" role="img" aria-labelledby="title desc">
+<title id="title">用两个 NOT 与两个三态开关实现 XOR</title>
+<desc id="desc">上方开关S0的数据为B，使能为NOT A；下方开关S1的数据为NOT B，使能为A。两个三态输出在Q处合并。圆点相连，交叉空隙不相连。</desc>
+<style>.wire{fill:none;stroke:#334155;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.gate{fill:#eaf3ff;stroke:#334155;stroke-width:3}.dot{fill:#334155}.label{fill:#0f172a;font:18px system-ui,sans-serif}.name{fill:#0f172a;font:600 20px system-ui,sans-serif;text-anchor:middle}@media(prefers-color-scheme:dark){.wire,.gate{stroke:#cbd5e1}.gate{fill:#173454}.dot{fill:#cbd5e1}.label,.name{fill:#f1f5f9}}</style>
+<defs><mask id="b-branch-gaps" maskUnits="userSpaceOnUse" x="0" y="0" width="1000" height="520" style="mask-type:luminance"><rect width="1000" height="520" fill="white"/><rect x="145" y="185" width="10" height="10" fill="black"/></mask></defs>
+<path class="wire" mask="url(#b-branch-gaps)" d="M 55 110 H 520 M 150 110 V 340 H 200"/>
+<path class="wire" d="M 55 190 H 200 M 100 190 V 430 H 580 V 380 M 310 190 H 410 V 225 H 580 V 150 M 310 340 H 520 M 640 110 H 790 V 340 H 640 M 790 225 H 905"/>
+<circle class="dot" cx="150" cy="110" r="5"/><circle class="dot" cx="100" cy="190" r="5"/><circle class="dot" cx="790" cy="225" r="5"/>
+<rect class="gate" x="200" y="160" width="110" height="60" rx="12"/><rect class="gate" x="200" y="310" width="110" height="60" rx="12"/>
+<rect class="gate" x="520" y="70" width="120" height="80" rx="12"/><rect class="gate" x="520" y="300" width="120" height="80" rx="12"/>
+<text class="name" x="255" y="197">NOT</text><text class="name" x="255" y="347">NOT</text>
+<text class="name" x="580" y="111">S0</text><text class="name" x="580" y="341">S1</text>
+<text class="label" x="25" y="116">B</text><text class="label" x="25" y="196">A</text><text class="label" x="920" y="231">Q</text>
+<text class="label" x="335" y="180">NA</text><text class="label" x="335" y="328">NB</text>
+<text class="label" x="490" y="100">D</text><text class="label" x="590" y="178">E</text><text class="label" x="490" y="328">D</text><text class="label" x="590" y="410">E</text>
+<text class="label" x="710" y="203">共享输出线</text>
+<text class="label" x="50" y="475">D：数据输入　E：控制输入（T 开启，F 输出 Z）　NA = NOT(A)，NB = NOT(B)</text>
+<text class="label" x="50" y="505">A = F：S0 传 B；A = T：S1 传 NOT(B)。交叉处空隙不相连。</text>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 400" role="img" aria-labelledby="title desc">
+<title id="title">八位补码求相反数：逐位取反再加一</title>
+<desc id="desc">输入字节先经过单字节NOT，接加法器A；B接八位常量0；一位输入进位Cin接T。加法器的八位和S作为输出，Cout不接。粗线八位，细线一位。</desc>
+<style>
+.wire,.bus{fill:none;stroke:#334155;stroke-width:3;stroke-linecap:round}.bus{stroke-width:7}
+.gate{fill:#eaf3ff;stroke:#334155;stroke-width:3}.label{fill:#0f172a;font:18px system-ui,sans-serif}.name{fill:#0f172a;font:600 20px system-ui,sans-serif;text-anchor:middle}
+@media(prefers-color-scheme:dark){.wire,.bus,.gate{stroke:#cbd5e1}.gate{fill:#173454}.label,.name{fill:#f1f5f9}}
+</style>
+<rect class="gate" x="205" y="125" width="155" height="70" rx="12"/>
+<rect class="gate" x="560" y="110" width="205" height="190" rx="12"/>
+<path class="bus" d="M 40 160 H 205 M 360 160 H 560 M 395 255 H 560 M 765 160 H 1010"/>
+<path class="wire" d="M 660 55 V 110 M 765 255 H 825"/>
+<text class="label" x="40" y="135">输入 x（8 位）</text>
+<text class="name" x="282" y="167">单字节 NOT</text>
+<text class="label" x="389" y="139">逐位取反</text>
+<text class="label" x="575" y="167">A</text><text class="label" x="575" y="262">B</text>
+<text class="name" x="663" y="212">单字节加法器</text>
+<text class="label" x="620" y="139">Cin</text>
+<text class="label" x="680" y="65">T（1 位）</text>
+<text class="label" x="395" y="230">00000000</text>
+<text class="label" x="735" y="167">S</text>
+<text class="label" x="811" y="137">输出 −x（8 位）</text>
+<text class="label" x="840" y="262">Cout 不接</text>
+<text class="label" x="40" y="348">计算：逐位取反(x) + 0 + 1，只保留低八位。粗线为 8 位，细线为 1 位。</text>
+<text class="label" x="40" y="382">−128 的相反数 +128 超出八位补码范围；该输入的低八位结果仍为 10000000。</text>
+</svg>

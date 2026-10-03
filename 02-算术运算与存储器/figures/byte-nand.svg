@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1250 1020" role="img" aria-labelledby="title desc">
+<title id="title">单字节与非的完整接线</title><desc id="desc">A与B分别拆成八位，Ai与Bi接入同一只NAND得到Qi，八路Qi按原位合成输出字节。交叉处空隙不相连。</desc>
+<style>.wire{fill:none;stroke:#334155;stroke-width:2.5;stroke-linecap:round}.bus{fill:none;stroke:#334155;stroke-width:7;stroke-linecap:round}.gate{fill:#eaf3ff;stroke:#334155;stroke-width:2.5}.label{fill:#0f172a;font:18px system-ui,sans-serif}.name{fill:#0f172a;font:600 20px system-ui,sans-serif;text-anchor:middle}@media(prefers-color-scheme:dark){.wire,.bus,.gate{stroke:#cbd5e1}.gate{fill:#173454}.label,.name{fill:#f1f5f9}}</style>
+<defs><mask id="gap1" maskUnits="userSpaceOnUse" x="0" y="0" width="1250" height="1020" style="mask-type:luminance"><rect width="1250" height="1020" fill="white"/><circle cx="675.35" cy="199.03" r="6" fill="black"/><circle cx="611.79" cy="274.67" r="6" fill="black"/><circle cx="559.20" cy="337.25" r="6" fill="black"/><circle cx="514.97" cy="389.88" r="6" fill="black"/><circle cx="477.26" cy="434.77" r="6" fill="black"/><circle cx="444.71" cy="473.49" r="6" fill="black"/><circle cx="416.35" cy="507.25" r="6" fill="black"/></mask><mask id="gap3" maskUnits="userSpaceOnUse" x="0" y="0" width="1250" height="1020" style="mask-type:luminance"><rect width="1250" height="1020" fill="white"/><circle cx="675.35" cy="291.52" r="6" fill="black"/><circle cx="611.79" cy="358.42" r="6" fill="black"/><circle cx="559.20" cy="413.77" r="6" fill="black"/><circle cx="514.97" cy="460.32" r="6" fill="black"/><circle cx="477.26" cy="500.01" r="6" fill="black"/><circle cx="444.71" cy="534.26" r="6" fill="black"/></mask><mask id="gap5" maskUnits="userSpaceOnUse" x="0" y="0" width="1250" height="1020" style="mask-type:luminance"><rect width="1250" height="1020" fill="white"/><circle cx="675.35" cy="384.00" r="6" fill="black"/><circle cx="611.79" cy="442.16" r="6" fill="black"/><circle cx="559.20" cy="490.28" r="6" fill="black"/><circle cx="514.97" cy="530.75" r="6" fill="black"/><circle cx="477.26" cy="565.26" r="6" fill="black"/></mask><mask id="gap7" maskUnits="userSpaceOnUse" x="0" y="0" width="1250" height="1020" style="mask-type:luminance"><rect width="1250" height="1020" fill="white"/><circle cx="675.35" cy="476.49" r="6" fill="black"/><circle cx="611.79" cy="525.91" r="6" fill="black"/><circle cx="559.20" cy="566.80" r="6" fill="black"/><circle cx="514.97" cy="601.18" r="6" fill="black"/></mask><mask id="gap9" maskUnits="userSpaceOnUse" x="0" y="0" width="1250" height="1020" style="mask-type:luminance"><rect width="1250" height="1020" fill="white"/><circle cx="675.35" cy="568.98" r="6" fill="black"/><circle cx="611.79" cy="609.66" r="6" fill="black"/><circle cx="559.20" cy="643.31" r="6" fill="black"/></mask><mask id="gap11" maskUnits="userSpaceOnUse" x="0" y="0" width="1250" height="1020" style="mask-type:luminance"><rect width="1250" height="1020" fill="white"/><circle cx="675.35" cy="661.46" r="6" fill="black"/><circle cx="611.79" cy="693.40" r="6" fill="black"/></mask><mask id="gap13" maskUnits="userSpaceOnUse" x="0" y="0" width="1250" height="1020" style="mask-type:luminance"><rect width="1250" height="1020" fill="white"/><circle cx="675.35" cy="753.95" r="6" fill="black"/></mask></defs>
+<path class="bus" d="M 45 260 H 180 M 45 760 H 180 M 1100 470 H 1205"/><rect class="gate" x="180" y="70" width="150" height="395" rx="12"/><rect class="gate" x="180" y="570" width="150" height="395" rx="12"/><rect class="gate" x="970" y="70" width="130" height="800" rx="12"/>
+<text class="name" x="255" y="45">A 的分线器</text><text class="name" x="255" y="545">B 的分线器</text><text class="name" x="1035" y="45">集线器</text>
+<text class="label" x="25" y="235">字节 A</text><text class="label" x="25" y="735">字节 B</text><text class="label" x="1130" y="445">字节 Q</text>
+<path class="wire" d="M 330 110 L 730 106"/>
+<path class="wire" mask="url(#gap1)" d="M 330 610 L 730 134"/>
+<path class="wire" d="M 330 155 L 730 206"/>
+<path class="wire" mask="url(#gap3)" d="M 330 655 L 730 234"/>
+<path class="wire" d="M 330 200 L 730 306"/>
+<path class="wire" mask="url(#gap5)" d="M 330 700 L 730 334"/>
+<path class="wire" d="M 330 245 L 730 406"/>
+<path class="wire" mask="url(#gap7)" d="M 330 745 L 730 434"/>
+<path class="wire" d="M 330 290 L 730 506"/>
+<path class="wire" mask="url(#gap9)" d="M 330 790 L 730 534"/>
+<path class="wire" d="M 330 335 L 730 606"/>
+<path class="wire" mask="url(#gap11)" d="M 330 835 L 730 634"/>
+<path class="wire" d="M 330 380 L 730 706"/>
+<path class="wire" mask="url(#gap13)" d="M 330 880 L 730 734"/>
+<path class="wire" d="M 330 425 L 730 806"/>
+<path class="wire" d="M 330 925 L 730 834"/>
+<rect class="gate" x="730" y="90" width="120" height="60" rx="12"/><text class="name" x="790" y="127">NAND</text><path class="wire" d="M 850 120 H 970"/>
+<text class="label" x="275" y="116">A0</text><text class="label" x="275" y="616">B0</text><text class="label" x="878" y="110">Q0</text><text class="label" x="985" y="126">1</text>
+<rect class="gate" x="730" y="190" width="120" height="60" rx="12"/><text class="name" x="790" y="227">NAND</text><path class="wire" d="M 850 220 H 970"/>
+<text class="label" x="275" y="161">A1</text><text class="label" x="275" y="661">B1</text><text class="label" x="878" y="210">Q1</text><text class="label" x="985" y="226">2</text>
+<rect class="gate" x="730" y="290" width="120" height="60" rx="12"/><text class="name" x="790" y="327">NAND</text><path class="wire" d="M 850 320 H 970"/>
+<text class="label" x="275" y="206">A2</text><text class="label" x="275" y="706">B2</text><text class="label" x="878" y="310">Q2</text><text class="label" x="985" y="326">4</text>
+<rect class="gate" x="730" y="390" width="120" height="60" rx="12"/><text class="name" x="790" y="427">NAND</text><path class="wire" d="M 850 420 H 970"/>
+<text class="label" x="275" y="251">A3</text><text class="label" x="275" y="751">B3</text><text class="label" x="878" y="410">Q3</text><text class="label" x="985" y="426">8</text>
+<rect class="gate" x="730" y="490" width="120" height="60" rx="12"/><text class="name" x="790" y="527">NAND</text><path class="wire" d="M 850 520 H 970"/>
+<text class="label" x="275" y="296">A4</text><text class="label" x="275" y="796">B4</text><text class="label" x="878" y="510">Q4</text><text class="label" x="985" y="526">16</text>
+<rect class="gate" x="730" y="590" width="120" height="60" rx="12"/><text class="name" x="790" y="627">NAND</text><path class="wire" d="M 850 620 H 970"/>
+<text class="label" x="275" y="341">A5</text><text class="label" x="275" y="841">B5</text><text class="label" x="878" y="610">Q5</text><text class="label" x="985" y="626">32</text>
+<rect class="gate" x="730" y="690" width="120" height="60" rx="12"/><text class="name" x="790" y="727">NAND</text><path class="wire" d="M 850 720 H 970"/>
+<text class="label" x="275" y="386">A6</text><text class="label" x="275" y="886">B6</text><text class="label" x="878" y="710">Q6</text><text class="label" x="985" y="726">64</text>
+<rect class="gate" x="730" y="790" width="120" height="60" rx="12"/><text class="name" x="790" y="827">NAND</text><path class="wire" d="M 850 820 H 970"/>
+<text class="label" x="275" y="431">A7</text><text class="label" x="275" y="931">B7</text><text class="label" x="878" y="810">Q7</text><text class="label" x="985" y="826">128</text>
+<text class="label" x="30" y="1000">Ai、Bi 的 i 是位编号；集线器数字是位权。粗线为字节，细线为一位；交叉空隙不相连。</text></svg>

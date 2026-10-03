@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 310" role="img" aria-labelledby="title desc">
+<title id="title">OR 输出反馈到自己的一个输入</title>
+<desc id="desc">A 接 OR 的第一个输入，OR 输出 Q 分支，一路送到输出，一路绕回 OR 的第二个输入。圆点表示相连。</desc>
+<style>
+.wire{fill:none;stroke:#334155;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.gate{fill:#eaf3ff;stroke:#334155;stroke-width:3}.dot{fill:#334155}.label{fill:#0f172a;font:18px system-ui,sans-serif}.name{fill:#0f172a;font:600 20px system-ui,sans-serif;text-anchor:middle}
+@media(prefers-color-scheme:dark){.wire,.gate{stroke:#cbd5e1}.gate{fill:#173454}.dot{fill:#cbd5e1}.label,.name{fill:#f1f5f9}}
+</style>
+<path class="wire" d="M 80 80 H 310 M 450 110 H 720 M 610 110 V 235 H 200 V 140 H 310"/>
+<rect class="gate" x="310" y="55" width="140" height="110" rx="12"/>
+<circle class="dot" cx="610" cy="110" r="5"/>
+<text class="name" x="380" y="117">OR</text>
+<text class="label" x="45" y="86">A</text><text class="label" x="735" y="116">Q</text>
+<text class="label" x="315" y="220">Q 反馈到第二个输入</text>
+<text class="label" x="60" y="285">A 曾为 1 且反馈已稳定后，即使 A 变为 0，Q 仍保持 1。</text>
+</svg>

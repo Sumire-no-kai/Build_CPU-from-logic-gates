@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 390" role="img" aria-labelledby="title desc"><title id="title">NOT 与一周期延迟构成交替输出</title><desc id="desc">延迟输出Q反馈到NOT输入，取反后的P送入延迟元件。Q与P始终互反。</desc>
+<style>.wire{fill:none;stroke:#334155;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.gate{fill:#eaf3ff;stroke:#334155;stroke-width:3}.dot{fill:#334155}.label{fill:#0f172a;font:18px system-ui,sans-serif}.name{fill:#0f172a;font:600 20px system-ui,sans-serif;text-anchor:middle}@media(prefers-color-scheme:dark){.wire,.gate{stroke:#cbd5e1}.gate{fill:#173454}.dot{fill:#cbd5e1}.label,.name{fill:#f1f5f9}}</style>
+<path class="wire" d="M 350 150 H 540 M 700 150 H 815 M 760 150 V 295 H 130 V 150 H 230"/>
+<path class="wire" d="M 415 150 V 65 H 815"/><circle class="dot" cx="415" cy="150" r="5"/><text class="label" x="830" y="71">P：偶 T、奇 F</text><rect class="gate" x="230" y="100" width="120" height="100" rx="12"/><rect class="gate" x="540" y="100" width="160" height="100" rx="12"/>
+<text class="name" x="290" y="157">NOT</text><text class="name" x="620" y="143">一周期延迟</text><text class="label" x="575" y="177">保存一位</text>
+<circle class="dot" cx="760" cy="150" r="5"/><text class="label" x="830" y="156">Q：偶 F、奇 T</text><text class="label" x="440" y="138">P</text>
+<text class="label" x="335" y="280">Q 返回，决定下一拍的值</text>
+<text class="label" x="75" y="345">图中奇偶对应关系以第 0 周期 Q = F 为前提。</text>
+<text class="label" x="75" y="375">下一拍 Q = 当前 P = NOT(当前 Q)</text></svg>

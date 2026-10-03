@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 490" role="img" aria-labelledby="title desc">
+<title id="title">一只与两只 NOT 的反馈环</title>
+<desc id="desc">上图一个 NOT 的输出 Q 接回自身输入。下图两只 NOT 首尾相连，中间节点为 X，输出与反馈节点为 Y。圆点表示分支相连。</desc>
+<style>
+.wire{fill:none;stroke:#334155;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.gate{fill:#eaf3ff;stroke:#334155;stroke-width:3}.dot{fill:#334155}
+.label{fill:#0f172a;font:18px system-ui,sans-serif}.name{fill:#0f172a;font:600 20px system-ui,sans-serif;text-anchor:middle}
+@media(prefers-color-scheme:dark){.wire,.gate{stroke:#cbd5e1}.gate{fill:#173454}.dot{fill:#cbd5e1}.label,.name{fill:#f1f5f9}}
+</style>
+<text class="label" x="30" y="30">一只 NOT：没有稳定的 0、1 解</text>
+<path class="wire" d="M 180 95 H 300 M 420 95 H 720 M 650 95 V 185 H 180 V 95"/>
+<rect class="gate" x="300" y="60" width="120" height="70" rx="12"/>
+<text class="name" x="360" y="102">NOT</text>
+<circle class="dot" cx="650" cy="95" r="5"/>
+<text class="label" x="735" y="101">Q</text>
+<text class="label" x="335" y="215">Q = NOT(Q)</text>
+<text class="label" x="30" y="270">两只 NOT：X、Y 为 0、1 或 1、0 时，两个门的要求一致</text>
+<path class="wire" d="M 160 335 H 220 M 330 335 H 470 M 580 335 H 735 M 630 335 V 435 H 160 V 335"/>
+<rect class="gate" x="220" y="300" width="110" height="70" rx="12"/>
+<rect class="gate" x="470" y="300" width="110" height="70" rx="12"/>
+<text class="name" x="275" y="342">NOT</text><text class="name" x="525" y="342">NOT</text>
+<circle class="dot" cx="630" cy="335" r="5"/>
+<text class="label" x="385" y="320">X</text><text class="label" x="745" y="341">Y</text>
+<text class="label" x="240" y="475">X = NOT(Y)，Y = NOT(X)</text>
+</svg>

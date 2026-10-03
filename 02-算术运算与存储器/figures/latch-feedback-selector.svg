@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 390" role="img" aria-labelledby="title desc">
+<title id="title">通过选择新数据或反馈值来写入和保持</title>
+<desc id="desc">选择器上路接D，下路接反馈Q，E为1选D、E为0选Q。输出Q分支回到下路。</desc>
+<style>.wire{fill:none;stroke:#334155;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.box{fill:#eaf3ff;stroke:#334155;stroke-width:3}.dot{fill:#334155}.label{fill:#0f172a;font:18px system-ui,sans-serif}.name{fill:#0f172a;font:600 20px system-ui,sans-serif;text-anchor:middle}@media(prefers-color-scheme:dark){.wire,.box{stroke:#cbd5e1}.box{fill:#173454}.dot{fill:#cbd5e1}.label,.name{fill:#f1f5f9}}</style>
+<path class="wire" d="M 80 140 H 330 M 550 170 H 800 M 700 170 V 305 H 190 V 215 H 330 M 440 65 V 100"/>
+<rect class="box" x="330" y="100" width="220" height="160" rx="12"/>
+<circle class="dot" cx="700" cy="170" r="5"/>
+<text class="name" x="440" y="180">选择器 MUX</text>
+<text class="label" x="35" y="146">D</text><text class="label" x="815" y="176">Q</text>
+<text class="label" x="300" y="40">E：1 选新数据，0 选反馈值</text>
+<text class="label" x="355" y="134">E = 1</text><text class="label" x="355" y="238">E = 0</text>
+<text class="label" x="340" y="330">旧值 Q 返回</text>
+<text class="label" x="70" y="370">功能示意：允许写入时跟随 D，关闭写入时通过反馈保持 Q。</text>
+</svg>
