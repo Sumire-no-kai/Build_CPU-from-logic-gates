@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 240" role="img" aria-labelledby="title desc">
+  <title id="title">四路输入的奇数计数</title>
+  <desc id="desc">A、B 经过第一个 XOR 得到 X，C、D 经过第二个 XOR 得到 Y，X、Y 经过第三个 XOR 得到 Q。共三个门，两级逻辑。</desc>
+  <style>
+    .wire { fill: none; stroke: #334155; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+    .gate { fill: #eaf3ff; stroke: #334155; stroke-width: 3; }
+    .label { fill: #0f172a; font: 17px system-ui, sans-serif; }
+    .name { fill: #0f172a; font: 600 18px system-ui, sans-serif; text-anchor: middle; }
+    @media (prefers-color-scheme: dark) {
+      .wire { stroke: #cbd5e1; }
+      .gate { fill: #173454; stroke: #cbd5e1; }
+      .label, .name { fill: #f1f5f9; }
+    }
+  </style>
+  <path class="wire" d="M 55 40 H 240 M 55 90 H 240 M 55 150 H 240 M 55 200 H 240 M 370 65 H 470 V 95 H 545 M 370 175 H 470 V 145 H 545 M 675 120 H 720"/>
+  <rect class="gate" x="240" y="15" width="130" height="100" rx="12"/>
+  <rect class="gate" x="240" y="125" width="130" height="100" rx="12"/>
+  <rect class="gate" x="545" y="65" width="130" height="110" rx="12"/>
+  <text class="name" x="305" y="72">XOR</text>
+  <text class="name" x="305" y="182">XOR</text>
+  <text class="name" x="610" y="127">XOR</text>
+  <text class="label" x="22" y="46">A</text>
+  <text class="label" x="22" y="96">B</text>
+  <text class="label" x="22" y="156">C</text>
+  <text class="label" x="22" y="206">D</text>
+  <text class="label" x="395" y="53">X</text>
+  <text class="label" x="395" y="163">Y</text>
+  <text class="label" x="728" y="126">Q</text>
+</svg>

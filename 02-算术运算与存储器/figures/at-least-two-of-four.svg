@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 500" role="img" aria-labelledby="title desc">
+  <title id="title">四路输入中至少两路为真的判断电路</title>
+  <desc id="desc">X 为 A AND B，Y 为 C AND D，Z 为 A OR B 与 C OR D 的 AND。X、Z、Y 分别接入三输入 OR，输出 Q。重复的输入标签表示同一根输入线分到不同位置。</desc>
+  <style>
+    .wire { fill: none; stroke: #334155; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+    .gate { fill: #eaf3ff; stroke: #334155; stroke-width: 3; }
+    .label { fill: #0f172a; font: 18px system-ui, sans-serif; }
+    .name { fill: #0f172a; font: 600 20px system-ui, sans-serif; text-anchor: middle; }
+    @media (prefers-color-scheme: dark) {
+      .wire { stroke: #cbd5e1; }
+      .gate { fill: #173454; stroke: #cbd5e1; }
+      .label, .name { fill: #f1f5f9; }
+    }
+  </style>
+  <path class="wire" d="M 55 40 H 220 M 55 80 H 220 M 55 170 H 220 M 55 210 H 220 M 55 290 H 220 M 55 330 H 220 M 55 420 H 220 M 55 460 H 220 M 340 60 H 720 V 180 H 820 M 340 190 H 410 V 215 H 480 M 340 310 H 410 V 265 H 480 M 340 440 H 720 V 300 H 820 M 610 240 H 820 M 950 240 H 1000" />
+  <rect class="gate" x="220" y="20" width="120" height="80" rx="12" />
+  <rect class="gate" x="220" y="150" width="120" height="80" rx="12" />
+  <rect class="gate" x="220" y="270" width="120" height="80" rx="12" />
+  <rect class="gate" x="220" y="400" width="120" height="80" rx="12" />
+  <rect class="gate" x="480" y="200" width="130" height="80" rx="12" />
+  <rect class="gate" x="820" y="155" width="130" height="170" rx="12" />
+  <text class="name" x="280" y="67">AND</text>
+  <text class="name" x="280" y="197">OR</text>
+  <text class="name" x="280" y="317">OR</text>
+  <text class="name" x="280" y="447">AND</text>
+  <text class="name" x="545" y="247">AND</text>
+  <text class="name" x="885" y="247">OR3</text>
+  <text class="label" x="22" y="46">A</text>
+  <text class="label" x="22" y="86">B</text>
+  <text class="label" x="22" y="176">A</text>
+  <text class="label" x="22" y="216">B</text>
+  <text class="label" x="22" y="296">C</text>
+  <text class="label" x="22" y="336">D</text>
+  <text class="label" x="22" y="426">C</text>
+  <text class="label" x="22" y="466">D</text>
+  <text class="label" x="365" y="48">X</text>
+  <text class="label" x="365" y="428">Y</text>
+  <text class="label" x="640" y="228">Z</text>
+  <text class="label" x="1015" y="246">Q</text>
+</svg>

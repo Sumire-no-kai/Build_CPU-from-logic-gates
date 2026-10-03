@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 510" role="img" aria-labelledby="title desc">
+<title id="title">两个半加器组成全加器</title>
+<desc id="desc">X=A XOR B，C1=A AND B，S=X XOR Cin，C2=X AND Cin，Cout=C1 OR C2。五个门完整接线，透明背景。</desc>
+<style>
+.wire{fill:none;stroke:#334155;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.gate{fill:#eaf3ff;stroke:#334155;stroke-width:3}.dot{fill:#334155}
+.label{fill:#0f172a;font:18px system-ui,sans-serif}.name{fill:#0f172a;font:600 20px system-ui,sans-serif;text-anchor:middle}
+@media(prefers-color-scheme:dark){.wire,.gate{stroke:#cbd5e1}.gate{fill:#173454}.dot{fill:#cbd5e1}.label,.name{fill:#f1f5f9}}
+</style>
+<defs>
+<mask id="a-gaps" maskUnits="userSpaceOnUse" x="0" y="0" width="1160" height="510" style="mask-type:luminance"><rect width="1160" height="510" fill="white"/><rect x="105" y="135" width="10" height="10" fill="black"/><rect x="155" y="375" width="10" height="10" fill="black"/><rect x="105" y="275" width="10" height="10" fill="black"/></mask>
+<mask id="b-gap" maskUnits="userSpaceOnUse" x="0" y="0" width="1160" height="510" style="mask-type:luminance"><rect width="1160" height="510" fill="white"/><rect x="155" y="275" width="10" height="10" fill="black"/></mask>
+<mask id="x-gap" maskUnits="userSpaceOnUse" x="0" y="0" width="1160" height="510" style="mask-type:luminance"><rect width="1160" height="510" fill="white"/><rect x="495" y="245" width="10" height="10" fill="black"/></mask>
+</defs>
+<path class="wire" mask="url(#a-gaps)" d="M 70 100 H 220 M 110 100 V 380 H 220"/>
+<path class="wire" mask="url(#b-gap)" d="M 70 140 H 220 M 160 140 V 420 H 220"/>
+<path class="wire" mask="url(#x-gap)" d="M 340 120 H 450 M 450 100 H 570 M 450 100 V 250 H 570"/>
+<path class="wire" d="M 70 280 H 500 V 140 H 570 M 500 270 H 570"/>
+<path class="wire" d="M 340 400 H 820 V 390 H 870 M 680 270 H 770 V 350 H 870 M 680 120 H 1040 M 990 370 H 1040"/>
+<circle class="dot" cx="110" cy="100" r="5"/>
+<circle class="dot" cx="160" cy="140" r="5"/>
+<circle class="dot" cx="450" cy="120" r="5"/>
+<circle class="dot" cx="500" cy="270" r="5"/>
+<rect class="gate" x="220" y="80" width="120" height="80" rx="12"/><text class="name" x="280" y="127">XOR</text>
+<rect class="gate" x="220" y="360" width="120" height="80" rx="12"/><text class="name" x="280" y="407">AND</text>
+<rect class="gate" x="570" y="80" width="110" height="80" rx="12"/><text class="name" x="625" y="127">XOR</text>
+<rect class="gate" x="570" y="230" width="110" height="80" rx="12"/><text class="name" x="625" y="277">AND</text>
+<rect class="gate" x="870" y="330" width="120" height="80" rx="12"/><text class="name" x="930" y="377">OR</text>
+<text class="label" x="20" y="106">A</text>
+<text class="label" x="20" y="146">B</text>
+<text class="label" x="20" y="286">Cin</text>
+<text class="label" x="370" y="108">X</text>
+<text class="label" x="370" y="388">C1</text>
+<text class="label" x="700" y="258">C2</text>
+<text class="label" x="1050" y="126">S</text>
+<text class="label" x="1050" y="376">Cout</text>
+<text class="label" x="220" y="40">先算 A + B</text>
+<text class="label" x="570" y="40">再算 X + Cin</text>
+<text class="label" x="870" y="310">合并进位</text>
+<text class="label" x="30" y="480">A + B + Cin = S + 2 × Cout　　● 相连；交叉处空隙不相连。</text>
+</svg>

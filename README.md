@@ -13,6 +13,7 @@ Notes are grouped by chapter. Within a chapter, an entry can follow a day's lear
 - [第一篇：从与非门开始搭逻辑门](01-布尔代数/从与非门开始搭逻辑门.md)
 - [第二篇：算术运算与存储器的前置知识](02-算术运算与存储器/算术运算与存储器的前置知识.md)
 - [第三篇：二进制与二进制速算](02-算术运算与存储器/二进制与二进制速算.md)
+- [第四篇：从逻辑判断到二进制运算](02-算术运算与存储器/第四篇学习日志.md)
 
 ## CPU build goals / 处理器构建目标
 

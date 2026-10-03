@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" role="img" aria-labelledby="title desc">
+  <title id="title">半加器：XOR 输出本位和，AND 输出进位</title>
+  <desc id="desc">输入 A 和 B 各分成两路，同时连接 XOR 与 AND。XOR 输出 S，权重为 1；AND 输出 C，权重为 2。圆点相连，交叉处空隙不相连。</desc>
+  <style>
+
+
+    .wire { fill: none; stroke: #334155; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+    .gate { fill: #eaf3ff; stroke: #334155; stroke-width: 3; }
+    .dot { fill: #334155; }
+    .label { fill: #0f172a; font: 18px system-ui, sans-serif; }
+    .name { fill: #0f172a; font: 600 20px system-ui, sans-serif; text-anchor: middle; }
+    @media (prefers-color-scheme: dark) {
+
+
+      .wire, .gate { stroke: #cbd5e1; }
+      .gate { fill: #173454; }
+      .dot { fill: #cbd5e1; }
+      .label, .name { fill: #f1f5f9; }
+    }
+  </style>
+<defs>
+<mask id="input-a-gap" maskUnits="userSpaceOnUse" x="0" y="0" width="800" height="360" style="mask-type:luminance">
+<rect width="800" height="360" fill="white"/>
+<rect x="155" y="125" width="10" height="10" fill="black"/>
+<rect x="235" y="215" width="10" height="10" fill="black"/>
+</mask>
+</defs>
+
+  <path class="wire" mask="url(#input-a-gap)" d="M 70 80 H 350 M 160 80 V 220 H 350"/>
+
+  <path class="wire" d="M 70 130 H 350 M 240 130 V 270 H 350 M 480 105 H 570 M 480 245 H 570"/>
+  <circle class="dot" cx="160" cy="80" r="5"/>
+  <circle class="dot" cx="240" cy="130" r="5"/>
+  <rect class="gate" x="350" y="60" width="130" height="90" rx="12"/>
+  <rect class="gate" x="350" y="200" width="130" height="90" rx="12"/>
+  <text class="name" x="415" y="112">XOR</text>
+  <text class="name" x="415" y="252">AND</text>
+  <text class="label" x="35" y="86">A</text>
+  <text class="label" x="35" y="136">B</text>
+  <text class="label" x="585" y="111">S：本位和（权重 1）</text>
+  <text class="label" x="585" y="251">C：进位（权重 2）</text>
+  <text class="label" x="35" y="334">完整结果按 C、S 排列：A + B = 2 × C + S</text>
+</svg>
